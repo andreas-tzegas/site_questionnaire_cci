@@ -1,3 +1,13 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+app_login:
+  path: /login
+  controller: App\Controller\Security\SecurityController::login
+  methods: [GET, POST]
+
+app_register:
+  path: /register
+  controller: App\Controller\Security\SecurityController::register
+  methods: [GET, POST]
